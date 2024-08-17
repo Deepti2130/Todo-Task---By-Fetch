@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+<title>ToDo Task - by using Fetch and async await</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4 offset-md-4">
+                <select id="selected" class="form-control">
+                    <option value="all">All</option>
+                    <option value="true">completed</option>
+                    <option value="false">Notcompleted</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 tablecss">
+        <div class="row">
+        <div class="col-12">
+        <table class="table table-bordered mt-4">
+        <thead>
+        <tr>
+        <td>Sr.No.</td>
+        <td>Title</td>
+        <td>UserId</td>
+        <td>Completed</td>
+        </tr>
+        </thead>
+        <tbody id="todolist">
+        </tbody>
+        </table>
+        </div>
+        </div>
+    </div>
+    <div class="loader d-none" id="loader">
+        <div class="spinner-border text-primary" role="status">
+           <span class="sr-only">Loading...</span>
+        </div>
+       </div>
+
+
+
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
